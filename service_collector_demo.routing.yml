@@ -1,0 +1,7 @@
+service_collector_demo.report:
+  path: '/admin/reports/service-collector-demo'
+  defaults:
+    _controller: '\\Drupal\\service_collector_demo\\Controller\\ReportController::report'
+    _title: 'Service Collector Demo'
+  requirements:
+    _permission: 'access administration pages'

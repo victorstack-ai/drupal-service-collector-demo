@@ -1,0 +1,15 @@
+services:
+  service_collector_demo.reporter:
+    class: Drupal\service_collector_demo\Reporter\Reporter
+    tags:
+      - { name: service_collector, tag: service_collector_demo.provider, call: addProvider }
+
+  service_collector_demo.provider.alpha:
+    class: Drupal\service_collector_demo\Provider\AlphaProvider
+    tags:
+      - { name: service_collector_demo.provider }
+
+  service_collector_demo.provider.beta:
+    class: Drupal\service_collector_demo\Provider\BetaProvider
+    tags:
+      - { name: service_collector_demo.provider }

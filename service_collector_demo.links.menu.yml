@@ -1,0 +1,5 @@
+service_collector_demo.report:
+  title: 'Service Collector Demo'
+  description: 'View collected provider output.'
+  route_name: service_collector_demo.report
+  parent: system.admin_reports

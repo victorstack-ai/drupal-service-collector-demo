@@ -1,0 +1,5 @@
+name: Service Collector Demo
+type: module
+description: Demonstrates Drupal service collectors with tagged providers.
+package: Custom
+core_version_requirement: ^10 || ^11
