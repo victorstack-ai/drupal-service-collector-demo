@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<ruleset name="Drupal Service Collector Demo">
+  <description>Drupal coding standards for the service collector demo.</description>
+  <rule ref="Drupal"/>
+  <arg name="extensions" value="php"/>
+  <file>src</file>
+  <file>tests</file>
+</ruleset>

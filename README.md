@@ -1,5 +1,7 @@
 # Drupal Service Collector Demo
 
+Part 3 in the "Drupal Service Container Deep Dive" series: service collectors.
+
 A tiny Drupal module that demonstrates service collectors: multiple services tagged with a custom tag are collected into a single reporter service via the `service_collector` tag.
 
 ## What it shows
@@ -32,3 +34,11 @@ services:
 ```
 
 The reporter will automatically include it on the report page without further wiring.
+
+## Quality checks
+
+```bash
+composer install
+vendor/bin/phpcs
+vendor/bin/phpunit
+```
